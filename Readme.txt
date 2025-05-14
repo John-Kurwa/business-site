@@ -1,3 +1,7 @@
+Bussiness site deaployed via Netlify
+
+[view link] (https://profound-mousse-a8623d.netlify.app/)
+
 Thanks for downloading this template!
 
 Template Name: Sailor
