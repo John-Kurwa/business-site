@@ -15,6 +15,46 @@
   window.addEventListener('load', toggleScrolled);
 
   /**
+   * Toggle dark mode
+   */
+  document.addEventListener('DOMContentLoaded', function () {
+  const toggleButton = document.getElementById('toggle-dark-mode');
+  const body = document.body;
+
+  // Optional: Remember mode with localStorage
+  if (localStorage.getItem('darkMode') === 'enabled') {
+    body.classList.add('dark-mode');
+  }
+
+  toggleButton.addEventListener('click', function () {
+    body.classList.toggle('dark-mode');
+    // Save preference
+    if (body.classList.contains('dark-mode')) {
+      localStorage.setItem('darkMode', 'enabled');
+    } else {
+      localStorage.setItem('darkMode', 'disabled');
+    }
+  });
+});
+
+  // Save the current mode in localStorage
+    if (document.body.classList.contains('dark-mode')) {
+      localStorage.setItem('darkMode', 'enabled');
+    } else {
+      localStorage.removeItem('darkMode');
+    }
+  // Check localStorage for dark mode preference on page load
+  window.addEventListener('load', () => {
+    if (localStorage.getItem('darkMode') === 'enabled') {
+      document.body.classList.add('dark-mode');
+      modeIcon.textContent = '☀️';
+    } else {
+      document.body.classList.remove('dark-mode');
+      modeIcon.textContent = '🌙';
+    }
+  });    
+        
+  /**
    * Mobile nav toggle
    */
   const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');

@@ -58,6 +58,104 @@ body {
   font-family: var(--default-font);
 }
 
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+.dark-mode a,
+.dark-mode a:hover {
+  color: #90caf9;
+}
+
+.dark-mode .header,
+.dark-mode .navmenu,
+.dark-mode .footer {
+  background-color: #121212;
+}
+
+.dark-mode .hero,
+.dark-mode .section,
+.dark-mode .carousel-item,
+.dark-mode .portfolio-info,
+.dark-mode .service-item,
+.dark-mode .resume-item,
+.dark-mode .contact,
+.dark-mode .about {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+.dark-mode .icon {
+  color: #90caf9;
+}
+
+.dark-mode h1, 
+.dark-mode h2, 
+.dark-mode h3, 
+.dark-mode h4, 
+.dark-mode h5, 
+.dark-mode h6 {
+  color: #ffffff;
+}
+
+.dark-mode .btn-getstarted, 
+.dark-mode .btn-primary, 
+.dark-mode .btn {
+  background-color: #90caf9;
+  color: #121212;
+  border: none;
+}
+
+.dark-mode .btn-getstarted:hover, 
+.dark-mode .btn-primary:hover, 
+.dark-mode .btn:hover {
+  background-color: #64b5f6;
+  color: #121212;
+}
+
+.dark-mode .progress-bar {
+  background-color: #90caf9;
+}
+
+.dark-mode .skills .progress {
+  background-color: #121212;
+}
+
+.dark-mode .testimonials .testimonial-item {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+.dark-mode .portfolio-item, 
+.dark-mode .portfolio-wrap {
+  background-color: #121212;
+}
+
+.dark-mode .resume .resume-item {
+  border-left: 2px solid #90caf9;
+}
+
+.dark-mode .contact .info-box {
+  background-color: #121212;
+}
+
+.dark-mode input, 
+.dark-mode textarea {
+  background-color: #121212;
+  color: #f0f0f0;
+  border: 1px solid #555;
+}
+
+.dark-mode input::placeholder, 
+.dark-mode textarea::placeholder {
+  color: #aaa;
+}
+body.dark-mode #toggle-dark-mode .bi-moon-stars-fill  {
+  color: #ffd700 !important;
+}
+
 a {
   color: var(--accent-color);
   text-decoration: none;
